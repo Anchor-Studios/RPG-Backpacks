@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "rpg_backpacks:custom/backpacknew_-_converted",
   "textures": {
-    "layer0": "rpg_backpacks:item/temp_texture"
+    "0": "rpg_backpacks:block/backpacktexture",
+    "particle": "rpg_backpacks:item/backpacktexture"
   }
 }

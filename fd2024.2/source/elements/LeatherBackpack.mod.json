@@ -2,14 +2,14 @@
   "_fv": 66,
   "_type": "curiosbauble",
   "definition": {
-    "renderType": 0,
-    "texture": "temp_texture",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "backpacktexture",
+    "customModelName": "backpacknew_-_converted:default",
     "name": "Leather Backpack",
     "rarity": "COMMON",
     "slotType": "BACK",
-    "baubleModel": "Default",
-    "baubleModelTexture": "",
+    "baubleModel": "Modelbackpack",
+    "baubleModelTexture": "backpacktexture.png",
     "creativeTab": {
       "value": "CUSTOM:RPGBackpacks"
     },
@@ -53,7 +53,7 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "hasModel": false,
+    "hasModel": true,
     "animation": "none"
   }
 }

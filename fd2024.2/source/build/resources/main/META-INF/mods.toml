@@ -1,14 +1,16 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="Not specified"
+license="All Rights Reserved"
 
 [[mods]]
 modId="rpg_backpacks"
-version="1.0.0"
+version="5.0.0"
 displayName="RPG Backpacks"
-displayURL="https://mcreator.net"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="User, MCreator"
+displayURL="https://www.anchorstudios.site/wiki/rpg-backpacks"
+logoFile="logo.png"
+credits="ReportIfYouAreSeeingThis"
+authors="Anchor Studios"
+displayTest="IGNORE_SERVER_VERSION"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -20,6 +22,12 @@ authors="User, MCreator"
     ordering="AFTER"
     side="BOTH"
 
+[[dependencies.rpg_backpacks]]
+    modId="ancore"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.rpg_backpacks]]
     modId="curios_api"
