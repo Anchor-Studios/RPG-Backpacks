@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "RPG Backpacks",
+    "icon": {
+      "value": "CUSTOM:LeatherBackpack"
+    },
+    "showSearch": true
+  }
+}
