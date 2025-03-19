@@ -1,7 +1,7 @@
 {
   "parent": "rpg_backpacks:custom/backpacknew_-_converted",
   "textures": {
-    "0": "rpg_backpacks:block/backpacktexture",
-    "particle": "rpg_backpacks:item/backpacktexture"
+    "0": "rpg_backpacks:block/bpleather",
+    "particle": "rpg_backpacks:item/bpleather"
   }
 }

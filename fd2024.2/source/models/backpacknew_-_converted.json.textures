@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "backpacktexture"
+        "0": "bpleather"
       },
       "name": "default"
     }
