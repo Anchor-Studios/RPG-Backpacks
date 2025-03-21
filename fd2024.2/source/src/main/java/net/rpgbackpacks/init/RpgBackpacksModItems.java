@@ -5,6 +5,7 @@
 package net.rpgbackpacks.init;
 
 import net.rpgbackpacks.item.LeatherBackpackItem;
+import net.rpgbackpacks.item.IronBackpackItem;
 import net.rpgbackpacks.RpgBackpacksMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -16,6 +17,7 @@ import net.minecraft.world.item.Item;
 public class RpgBackpacksModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, RpgBackpacksMod.MODID);
 	public static final RegistryObject<Item> LEATHER_BACKPACK = REGISTRY.register("leather_backpack", () -> new LeatherBackpackItem());
+	public static final RegistryObject<Item> IRON_BACKPACK = REGISTRY.register("iron_backpack", () -> new IronBackpackItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

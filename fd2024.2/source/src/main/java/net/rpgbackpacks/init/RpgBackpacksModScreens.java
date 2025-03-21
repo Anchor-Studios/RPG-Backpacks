@@ -6,6 +6,8 @@ package net.rpgbackpacks.init;
 
 import net.rpgbackpacks.client.gui.LeatherBackpackGUIScreen;
 import net.rpgbackpacks.client.gui.LBGUIScreen;
+import net.rpgbackpacks.client.gui.IronBackpackGUIScreen;
+import net.rpgbackpacks.client.gui.IBGUIScreen;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -21,6 +23,8 @@ public class RpgBackpacksModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(RpgBackpacksModMenus.LEATHER_BACKPACK_GUI.get(), LeatherBackpackGUIScreen::new);
 			MenuScreens.register(RpgBackpacksModMenus.LBGUI.get(), LBGUIScreen::new);
+			MenuScreens.register(RpgBackpacksModMenus.IBGUI.get(), IBGUIScreen::new);
+			MenuScreens.register(RpgBackpacksModMenus.IRON_BACKPACK_GUI.get(), IronBackpackGUIScreen::new);
 		});
 	}
 }
