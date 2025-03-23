@@ -41,6 +41,9 @@
     "onRightClickedInAir": {
       "name": "IBRightclicked"
     },
+    "onEquip": {
+      "name": "BackpackLoad"
+    },
     "isFood": false,
     "friendlyPigs": false,
     "enderMask": false,

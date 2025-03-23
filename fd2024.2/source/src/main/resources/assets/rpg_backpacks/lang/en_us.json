@@ -8,6 +8,7 @@
   "gui.rpg_backpacks.ibgui.label_inventory": "Inventory",
   "gui.rpg_backpacks.gbgui.label_inventory": "Inventory",
   "item.rpg_backpacks.leather_backpack": "Leather Backpack",
+  "item.rpg_backpacks.backpack_loader": "null",
   "gui.rpg_backpacks.lbgui.label_inventory": "Inventory",
   "item.rpg_backpacks.iron_backpack": "Iron Backpack",
   "gui.rpg_backpacks.golden_backpack_gui.label_inventory": "Inventory"

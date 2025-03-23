@@ -2,9 +2,11 @@
 package net.rpgbackpacks.item;
 
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
+import top.theillusivec4.curios.api.SlotContext;
 
 import net.rpgbackpacks.world.inventory.GBGUIMenu;
 import net.rpgbackpacks.procedures.IBRightclickedProcedure;
+import net.rpgbackpacks.procedures.BackpackLoadProcedure;
 import net.rpgbackpacks.item.inventory.GoldenBackpackInventoryCapability;
 
 import net.minecraftforge.network.NetworkHooks;
@@ -65,6 +67,11 @@ public class GoldenBackpackItem extends Item implements ICurioItem {
 
 		IBRightclickedProcedure.execute(entity, itemstack);
 		return ar;
+	}
+
+	@Override
+	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
+		BackpackLoadProcedure.execute(slotContext.entity().level(), stack);
 	}
 
 	@Override

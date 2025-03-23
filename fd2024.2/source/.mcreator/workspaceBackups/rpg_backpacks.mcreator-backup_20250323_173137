@@ -61,29 +61,6 @@
       }
     },
     {
-      "name": "LeatherBackpackRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leather_backpack_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/rpgbackpacks/procedures/LeatherBackpackRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/BackpackItems"
-    },
-    {
       "name": "OpenBackpack",
       "type": "keybind",
       "compiles": true,

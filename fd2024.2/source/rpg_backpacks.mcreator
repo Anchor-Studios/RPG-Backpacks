@@ -400,6 +400,43 @@
           "src/main/resources/data/curios/tags/items/backpack.json"
         ]
       }
+    },
+    {
+      "name": "BackpackLoader",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack_loader",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpg_backpacks/models/item/backpack_loader.json",
+          "src/main/java/net/rpgbackpacks/item/BackpackLoaderItem.java"
+        ]
+      },
+      "path": "~/BackpackItems"
+    },
+    {
+      "name": "BackpackLoad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack_load",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/BackpackLoadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackItems"
     }
   ],
   "variable_elements": [
@@ -424,6 +461,7 @@
       "gui.rpg_backpacks.ibgui.label_inventory": "Inventory",
       "gui.rpg_backpacks.gbgui.label_inventory": "Inventory",
       "item.rpg_backpacks.leather_backpack": "Leather Backpack",
+      "item.rpg_backpacks.backpack_loader": "null",
       "gui.rpg_backpacks.lbgui.label_inventory": "Inventory",
       "item.rpg_backpacks.iron_backpack": "Iron Backpack",
       "gui.rpg_backpacks.golden_backpack_gui.label_inventory": "Inventory"
