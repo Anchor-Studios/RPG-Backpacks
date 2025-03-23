@@ -35,7 +35,7 @@ import io.netty.buffer.Unpooled;
 
 public class NetheriteBackpackItem extends Item implements ICurioItem {
 	public NetheriteBackpackItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

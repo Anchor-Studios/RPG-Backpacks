@@ -21,7 +21,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class NetheriteBackpackRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = new ResourceLocation("rpg_backpacks", "textures/entities/bpdiamond.png");
+	private static final ResourceLocation TEXTURE = new ResourceLocation("rpg_backpacks", "textures/entities/bpnetherite.png");
 	private final Modelbackpack model;
 
 	public NetheriteBackpackRenderer() {

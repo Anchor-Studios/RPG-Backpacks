@@ -1,7 +1,7 @@
 {
   "parent": "rpg_backpacks:custom/netheritebackpackitem",
   "textures": {
-    "0": "rpg_backpacks:block/bpdiamond",
-    "particle": "rpg_backpacks:item/bpdiamond"
+    "0": "rpg_backpacks:block/bpnetherite",
+    "particle": "rpg_backpacks:item/bpnetherite"
   }
 }

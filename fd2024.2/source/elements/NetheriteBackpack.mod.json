@@ -3,13 +3,13 @@
   "_type": "curiosbauble",
   "definition": {
     "renderType": 1,
-    "texture": "bpdiamond",
+    "texture": "bpnetherite",
     "customModelName": "netheritebackpackitem:default",
     "name": "Netherite Backpack",
     "rarity": "COMMON",
     "slotType": "Backpack",
     "baubleModel": "Modelbackpack",
-    "baubleModelTexture": "bpdiamond.png",
+    "baubleModelTexture": "bpnetherite.png",
     "creativeTab": {
       "value": "CUSTOM:RPGBackpacks"
     },
@@ -22,7 +22,7 @@
       "value": "Items.NETHERITE_INGOT"
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
