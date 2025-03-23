@@ -7,7 +7,7 @@
     "customModelName": "goldenbackpackitem:default",
     "name": "Golden Backpack",
     "rarity": "COMMON",
-    "slotType": "BACK",
+    "slotType": "Backpack",
     "baubleModel": "Modelbackpack",
     "baubleModelTexture": "bpgolden.png",
     "creativeTab": {

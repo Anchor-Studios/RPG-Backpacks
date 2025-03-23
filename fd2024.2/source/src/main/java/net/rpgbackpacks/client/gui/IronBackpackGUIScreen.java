@@ -61,10 +61,10 @@ public class IronBackpackGUIScreen extends AbstractContainerScreen<IronBackpackG
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.rpg_backpacks.iron_backpack_gui.label_inventory"), 7, 90, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.rpg_backpacks.iron_backpack_gui.label_inventory"), 7, 91, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				DisplayNameReturnProcedure.execute(entity), 7, 6, -12829636, false);
+				DisplayNameReturnProcedure.execute(entity), 7, 7, -12829636, false);
 	}
 
 	@Override

@@ -22,7 +22,7 @@
             "falpha": 0.0
           },
           "x": 133,
-          "y": 118
+          "y": 119
         }
       },
       {
@@ -92,7 +92,7 @@
             "falpha": 0.0
           },
           "x": 133,
-          "y": 34
+          "y": 35
         }
       },
       {
@@ -691,7 +691,7 @@
       }
     ],
     "onOpen": {
-      "name": "IBGUIIsOpened"
+      "name": "PlayerJoins"
     },
     "onTick": {
       "name": "IBGUIIsOpened"

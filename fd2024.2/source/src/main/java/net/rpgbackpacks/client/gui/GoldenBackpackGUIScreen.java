@@ -63,8 +63,8 @@ public class GoldenBackpackGUIScreen extends AbstractContainerScreen<GoldenBackp
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font,
 
-				DisplayNameReturnProcedure.execute(entity), 7, 6, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.rpg_backpacks.golden_backpack_gui.label_inventory"), 7, 108, -12829636, false);
+				DisplayNameReturnProcedure.execute(entity), 7, 7, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.rpg_backpacks.golden_backpack_gui.label_inventory"), 7, 109, -12829636, false);
 	}
 
 	@Override

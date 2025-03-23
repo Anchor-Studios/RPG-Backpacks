@@ -7,7 +7,7 @@
     "customModelName": "backpacknew_-_converted:default",
     "name": "Leather Backpack",
     "rarity": "COMMON",
-    "slotType": "BACK",
+    "slotType": "Backpack",
     "baubleModel": "Modelbackpack",
     "baubleModelTexture": "bpleather.png",
     "creativeTab": {
@@ -26,7 +26,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
-    "addSlot": true,
+    "addSlot": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": []
@@ -39,7 +39,7 @@
     "inventoryStackSize": 64,
     "slotAmount": 1,
     "onRightClickedInAir": {
-      "name": "LeatherBackpackRightclicked"
+      "name": "IBRightclicked"
     },
     "isFood": false,
     "friendlyPigs": false,

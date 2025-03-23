@@ -135,44 +135,8 @@ Adding Libraries to Inheritance
 Reading Input: C:\Users\User\Desktop\GitHub Repositories\RPG-Backpacks\fd2024.2\source\build\libs\modid-1.0.jar
 Adding input to inheritance map
 Processing entries
-Conflicting propagated mapping for net/rpgbackpacks/client/model/Modelbackpack/setupAnim(Lnet/minecraft/world/entity/Entity;FFFFF)V from net/minecraft/client/model/EntityModel/setupAnim(Lnet/minecraft/world/entity/Entity;FFFFF)V: setupAnim -> m_6973_
-Conflicting propagated mapping for net/rpgbackpacks/client/model/Modelbackpack/renderToBuffer(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V from net/minecraft/client/model/Model/renderToBuffer(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V: renderToBuffer -> m_7695_
-Conflicting propagated mapping for net/rpgbackpacks/init/RpgBackpacksModKeyMappings$1/setDown(Z)V from net/minecraft/client/KeyMapping/setDown(Z)V: setDown -> m_7249_
-Conflicting propagated mapping for net/rpgbackpacks/item/IronBackpackItem/use(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder; from net/minecraft/world/item/Item/use(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;: use -> m_7203_
-Conflicting propagated mapping for net/rpgbackpacks/item/LeatherBackpackItem/use(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder; from net/minecraft/world/item/Item/use(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResultHolder;: use -> m_7203_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/IBGUIScreen/keyPressed(III)Z from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/keyPressed(III)Z: keyPressed -> m_7933_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/LBGUIScreen/keyPressed(III)Z from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/keyPressed(III)Z: keyPressed -> m_7933_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/IBGUIScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/LBGUIScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/IBGUIScreen/init()V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/init()V: init -> m_7856_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/LBGUIScreen/init()V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/init()V: init -> m_7856_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/LeatherBackpackGUIScreen/keyPressed(III)Z from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/keyPressed(III)Z: keyPressed -> m_7933_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/IBGUIScreen/renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V: renderLabels -> m_280003_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/LBGUIScreen/renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V: renderLabels -> m_280003_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/LeatherBackpackGUIScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/IBGUIScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/LBGUIScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/LeatherBackpackGUIScreen/init()V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/init()V: init -> m_7856_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/LeatherBackpackGUIScreen/renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V: renderLabels -> m_280003_
-Conflicting propagated mapping for net/rpgbackpacks/client/gui/LeatherBackpackGUIScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/IBGUIMenu/moveItemStackTo(Lnet/minecraft/world/item/ItemStack;IIZ)Z from net/minecraft/world/inventory/AbstractContainerMenu/moveItemStackTo(Lnet/minecraft/world/item/ItemStack;IIZ)Z: moveItemStackTo -> m_38903_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/IBGUIMenu/removed(Lnet/minecraft/world/entity/player/Player;)V from net/minecraft/world/inventory/AbstractContainerMenu/removed(Lnet/minecraft/world/entity/player/Player;)V: removed -> m_6877_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/LeatherBackpackGUIMenu/moveItemStackTo(Lnet/minecraft/world/item/ItemStack;IIZ)Z from net/minecraft/world/inventory/AbstractContainerMenu/moveItemStackTo(Lnet/minecraft/world/item/ItemStack;IIZ)Z: moveItemStackTo -> m_38903_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/LeatherBackpackGUIMenu/removed(Lnet/minecraft/world/entity/player/Player;)V from net/minecraft/world/inventory/AbstractContainerMenu/removed(Lnet/minecraft/world/entity/player/Player;)V: removed -> m_6877_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/LeatherBackpackGUIMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/LeatherBackpackGUIMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/IBGUIMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/LBGUIMenu/moveItemStackTo(Lnet/minecraft/world/item/ItemStack;IIZ)Z from net/minecraft/world/inventory/AbstractContainerMenu/moveItemStackTo(Lnet/minecraft/world/item/ItemStack;IIZ)Z: moveItemStackTo -> m_38903_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/LBGUIMenu/removed(Lnet/minecraft/world/entity/player/Player;)V from net/minecraft/world/inventory/AbstractContainerMenu/removed(Lnet/minecraft/world/entity/player/Player;)V: removed -> m_6877_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/LBGUIMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/IBGUIMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
-Conflicting propagated mapping for net/rpgbackpacks/world/inventory/LBGUIMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
-Conflicting propagated mapping for net/rpgbackpacks/item/IronBackpackItem$1/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
-Conflicting propagated mapping for net/rpgbackpacks/item/IronBackpackItem$1/getDisplayName()Lnet/minecraft/network/chat/Component; from net/minecraft/world/MenuProvider/getDisplayName()Lnet/minecraft/network/chat/Component;: getDisplayName -> m_5446_
-Conflicting propagated mapping for net/minecraftforge/network/IContainerFactory/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuType$MenuSupplier/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: create -> m_39994_
-Conflicting propagated mapping for net/rpgbackpacks/item/LeatherBackpackItem$1/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
-Conflicting propagated mapping for net/rpgbackpacks/item/LeatherBackpackItem$1/getDisplayName()Lnet/minecraft/network/chat/Component; from net/minecraft/world/MenuProvider/getDisplayName()Lnet/minecraft/network/chat/Component;: getDisplayName -> m_5446_
 Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
+Conflicting propagated mapping for net/minecraftforge/network/IContainerFactory/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuType$MenuSupplier/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: create -> m_39994_
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/isInvulnerableTo(Lnet/minecraft/world/damagesource/DamageSource;)Z from net/minecraft/server/level/ServerPlayer/isInvulnerableTo(Lnet/minecraft/world/damagesource/DamageSource;)Z: isInvulnerableTo -> m_6673_
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/canHarmPlayer(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/server/level/ServerPlayer/canHarmPlayer(Lnet/minecraft/world/entity/player/Player;)Z: canHarmPlayer -> m_7099_
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/updateOptions(Lnet/minecraft/network/protocol/game/ServerboundClientInformationPacket;)V from net/minecraft/server/level/ServerPlayer/updateOptions(Lnet/minecraft/network/protocol/game/ServerboundClientInformationPacket;)V: updateOptions -> m_9156_
@@ -181,8 +145,6 @@ Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/die
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/tick()V from net/minecraft/server/level/ServerPlayer/tick()V: tick -> m_8119_
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/getServer()Lnet/minecraft/server/MinecraftServer; from net/minecraft/world/entity/Entity/getServer()Lnet/minecraft/server/MinecraftServer;: getServer -> m_20194_
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/awardStat(Lnet/minecraft/stats/Stat;I)V from net/minecraft/server/level/ServerPlayer/awardStat(Lnet/minecraft/stats/Stat;I)V: awardStat -> m_6278_
-Conflicting propagated mapping for net/rpgbackpacks/procedures/OpenBackpackOnKeyPressedProcedure$1/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
-Conflicting propagated mapping for net/rpgbackpacks/procedures/OpenBackpackOnKeyPressedProcedure$1/getDisplayName()Lnet/minecraft/network/chat/Component; from net/minecraft/world/MenuProvider/getDisplayName()Lnet/minecraft/network/chat/Component;: getDisplayName -> m_5446_
 Conflicting propagated mapping for net/minecraftforge/items/SlotItemHandler/set(Lnet/minecraft/world/item/ItemStack;)V from net/minecraft/world/inventory/Slot/set(Lnet/minecraft/world/item/ItemStack;)V: set -> m_5852_
 Conflicting propagated mapping for net/minecraftforge/items/SlotItemHandler/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z from net/minecraft/world/inventory/Slot/mayPlace(Lnet/minecraft/world/item/ItemStack;)Z: mayPlace -> m_5857_
 Conflicting propagated mapping for net/minecraftforge/items/SlotItemHandler/remove(I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/Slot/remove(I)Lnet/minecraft/world/item/ItemStack;: remove -> m_6201_
@@ -201,6 +163,7 @@ Writing Output: C:\Users\User\Desktop\GitHub Repositories\RPG-Backpacks\fd2024.2
   assets/curios/
   assets/curios/textures/
   assets/curios/textures/slot/
+  assets/curios/textures/slot/backpackslot.png
   assets/curios/textures/slot/temp_texture.png
   assets/rpg_backpacks/
   assets/rpg_backpacks/lang/
@@ -208,25 +171,34 @@ Writing Output: C:\Users\User\Desktop\GitHub Repositories\RPG-Backpacks\fd2024.2
   assets/rpg_backpacks/models/
   assets/rpg_backpacks/models/custom/
   assets/rpg_backpacks/models/custom/backpacknew_-_converted.json
+  assets/rpg_backpacks/models/custom/goldenbackpackitem.json
+  assets/rpg_backpacks/models/custom/ironbackpackitem.json
   assets/rpg_backpacks/models/item/
+  assets/rpg_backpacks/models/item/golden_backpack.json
   assets/rpg_backpacks/models/item/iron_backpack.json
   assets/rpg_backpacks/models/item/leather_backpack.json
   assets/rpg_backpacks/textures/
   assets/rpg_backpacks/textures/block/
   assets/rpg_backpacks/textures/block/bpdiamond.png
+  assets/rpg_backpacks/textures/block/bpgolden.png
   assets/rpg_backpacks/textures/block/bpiron.png
   assets/rpg_backpacks/textures/block/bpleather.png
   assets/rpg_backpacks/textures/entities/
   assets/rpg_backpacks/textures/entities/bpdiamond.png
+  assets/rpg_backpacks/textures/entities/bpgolden.png
   assets/rpg_backpacks/textures/entities/bpiron.png
   assets/rpg_backpacks/textures/entities/bpleather.png
   assets/rpg_backpacks/textures/item/
   assets/rpg_backpacks/textures/item/bpdiamond.png
+  assets/rpg_backpacks/textures/item/bpgolden.png
   assets/rpg_backpacks/textures/item/bpiron.png
   assets/rpg_backpacks/textures/item/bpleather.png
   assets/rpg_backpacks/textures/rpg-backpacks.png
   assets/rpg_backpacks/textures/rpgbackpackssquare.png
   assets/rpg_backpacks/textures/screens/
+  assets/rpg_backpacks/textures/screens/backpackslot.png
+  assets/rpg_backpacks/textures/screens/gbgui.png
+  assets/rpg_backpacks/textures/screens/golden_backpack_gui.png
   assets/rpg_backpacks/textures/screens/ibgui.png
   assets/rpg_backpacks/textures/screens/iron_backpack_gui.png
   assets/rpg_backpacks/textures/screens/lbgui.png
@@ -235,25 +207,30 @@ Writing Output: C:\Users\User\Desktop\GitHub Repositories\RPG-Backpacks\fd2024.2
   data/curios/
   data/curios/tags/
   data/curios/tags/items/
-  data/curios/tags/items/back.json
+  data/curios/tags/items/backpack.json
   logo.png
   net/
   net/rpgbackpacks/
   net/rpgbackpacks/RpgBackpacksMod.class
   net/rpgbackpacks/client/
   net/rpgbackpacks/client/gui/
+  net/rpgbackpacks/client/gui/GBGUIScreen.class
+  net/rpgbackpacks/client/gui/GoldenBackpackGUIScreen.class
   net/rpgbackpacks/client/gui/IBGUIScreen.class
+  net/rpgbackpacks/client/gui/IronBackpackGUIScreen.class
   net/rpgbackpacks/client/gui/LBGUIScreen.class
   net/rpgbackpacks/client/gui/LeatherBackpackGUIScreen.class
   net/rpgbackpacks/client/model/
   net/rpgbackpacks/client/model/Modelbackpack.class
   net/rpgbackpacks/client/renderer/
+  net/rpgbackpacks/client/renderer/GoldenBackpackRenderer.class
   net/rpgbackpacks/client/renderer/IronBackpackRenderer.class
   net/rpgbackpacks/client/renderer/LeatherBackpackRenderer.class
   net/rpgbackpacks/init/
   net/rpgbackpacks/init/RpgBackpacksModCuriosProperties.class
   net/rpgbackpacks/init/RpgBackpacksModCuriosRenderers.class
   net/rpgbackpacks/init/RpgBackpacksModCuriosSlots.class
+  net/rpgbackpacks/init/RpgBackpacksModCustomCuriosSlots.class
   net/rpgbackpacks/init/RpgBackpacksModItems.class
   net/rpgbackpacks/init/RpgBackpacksModKeyMappings$1.class
   net/rpgbackpacks/init/RpgBackpacksModKeyMappings$KeyEventListener.class
@@ -264,11 +241,15 @@ Writing Output: C:\Users\User\Desktop\GitHub Repositories\RPG-Backpacks\fd2024.2
   net/rpgbackpacks/init/RpgBackpacksModScreens.class
   net/rpgbackpacks/init/RpgBackpacksModTabs.class
   net/rpgbackpacks/item/
+  net/rpgbackpacks/item/GoldenBackpackItem$1.class
+  net/rpgbackpacks/item/GoldenBackpackItem.class
   net/rpgbackpacks/item/IronBackpackItem$1.class
   net/rpgbackpacks/item/IronBackpackItem.class
   net/rpgbackpacks/item/LeatherBackpackItem$1.class
   net/rpgbackpacks/item/LeatherBackpackItem.class
   net/rpgbackpacks/item/inventory/
+  net/rpgbackpacks/item/inventory/GoldenBackpackInventoryCapability$1.class
+  net/rpgbackpacks/item/inventory/GoldenBackpackInventoryCapability.class
   net/rpgbackpacks/item/inventory/IronBackpackInventoryCapability$1.class
   net/rpgbackpacks/item/inventory/IronBackpackInventoryCapability.class
   net/rpgbackpacks/item/inventory/LeatherBackpackInventoryCapability$1.class
@@ -283,6 +264,9 @@ Writing Output: C:\Users\User\Desktop\GitHub Repositories\RPG-Backpacks\fd2024.2
   net/rpgbackpacks/network/RpgBackpacksModVariables.class
   net/rpgbackpacks/procedures/
   net/rpgbackpacks/procedures/DisplayNameReturnProcedure.class
+  net/rpgbackpacks/procedures/GBGUIIsOpenedProcedure$1.class
+  net/rpgbackpacks/procedures/GBGUIIsOpenedProcedure$2.class
+  net/rpgbackpacks/procedures/GBGUIIsOpenedProcedure.class
   net/rpgbackpacks/procedures/IBGUIIsOpenedProcedure$1.class
   net/rpgbackpacks/procedures/IBGUIIsOpenedProcedure$2.class
   net/rpgbackpacks/procedures/IBGUIIsOpenedProcedure.class
@@ -290,16 +274,111 @@ Writing Output: C:\Users\User\Desktop\GitHub Repositories\RPG-Backpacks\fd2024.2
   net/rpgbackpacks/procedures/LeatherBackpackGUIThisGUIIsOpenedProcedure$1.class
   net/rpgbackpacks/procedures/LeatherBackpackGUIThisGUIIsOpenedProcedure$2.class
   net/rpgbackpacks/procedures/LeatherBackpackGUIThisGUIIsOpenedProcedure.class
-  net/rpgbackpacks/procedures/LeatherBackpackRightclickedProcedure.class
   net/rpgbackpacks/procedures/OpenBackpackOnKeyPressedProcedure$1.class
+  net/rpgbackpacks/procedures/OpenBackpackOnKeyPressedProcedure$2.class
+  net/rpgbackpacks/procedures/OpenBackpackOnKeyPressedProcedure$3.class
   net/rpgbackpacks/procedures/OpenBackpackOnKeyPressedProcedure.class
   net/rpgbackpacks/procedures/PlayerJoinsProcedure.class
+  net/rpgbackpacks/procedures/ReverseGBGuIIsClosedProcedure$1.class
+  net/rpgbackpacks/procedures/ReverseGBGuIIsClosedProcedure.class
   net/rpgbackpacks/procedures/ReverseIBGUIThiGUIIsClosedProcedure$1.class
   net/rpgbackpacks/procedures/ReverseIBGUIThiGUIIsClosedProcedure.class
   net/rpgbackpacks/procedures/ReverseLeatherBackpackGUIThisGUIIsClosedProcedure$1.class
   net/rpgbackpacks/procedures/ReverseLeatherBackpackGUIThisGUIIsClosedProcedure.class
   net/rpgbackpacks/world/
   net/rpgbackpacks/world/inventory/
+  net/rpgbackpacks/world/inventory/GBGUIMenu$1.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$10.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$11.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$12.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$13.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$14.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$15.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$16.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$17.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$18.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$19.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$2.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$20.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$21.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$22.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$23.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$24.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$25.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$26.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$27.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$28.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$29.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$3.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$30.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$31.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$32.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$33.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$34.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$35.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$36.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$37.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$38.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$39.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$4.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$40.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$41.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$42.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$43.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$44.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$45.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$5.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$6.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$7.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$8.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu$9.class
+  net/rpgbackpacks/world/inventory/GBGUIMenu.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$1.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$10.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$11.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$12.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$13.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$14.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$15.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$16.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$17.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$18.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$19.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$2.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$20.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$21.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$22.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$23.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$24.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$25.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$26.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$27.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$28.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$29.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$3.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$30.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$31.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$32.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$33.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$34.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$35.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$36.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$37.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$38.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$39.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$4.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$40.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$41.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$42.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$43.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$44.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$45.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$5.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$6.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$7.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$8.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu$9.class
+  net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu.class
   net/rpgbackpacks/world/inventory/IBGUIMenu$1.class
   net/rpgbackpacks/world/inventory/IBGUIMenu$10.class
   net/rpgbackpacks/world/inventory/IBGUIMenu$11.class
@@ -320,7 +399,16 @@ Writing Output: C:\Users\User\Desktop\GitHub Repositories\RPG-Backpacks\fd2024.2
   net/rpgbackpacks/world/inventory/IBGUIMenu$25.class
   net/rpgbackpacks/world/inventory/IBGUIMenu$26.class
   net/rpgbackpacks/world/inventory/IBGUIMenu$27.class
+  net/rpgbackpacks/world/inventory/IBGUIMenu$28.class
+  net/rpgbackpacks/world/inventory/IBGUIMenu$29.class
   net/rpgbackpacks/world/inventory/IBGUIMenu$3.class
+  net/rpgbackpacks/world/inventory/IBGUIMenu$30.class
+  net/rpgbackpacks/world/inventory/IBGUIMenu$31.class
+  net/rpgbackpacks/world/inventory/IBGUIMenu$32.class
+  net/rpgbackpacks/world/inventory/IBGUIMenu$33.class
+  net/rpgbackpacks/world/inventory/IBGUIMenu$34.class
+  net/rpgbackpacks/world/inventory/IBGUIMenu$35.class
+  net/rpgbackpacks/world/inventory/IBGUIMenu$36.class
   net/rpgbackpacks/world/inventory/IBGUIMenu$4.class
   net/rpgbackpacks/world/inventory/IBGUIMenu$5.class
   net/rpgbackpacks/world/inventory/IBGUIMenu$6.class
@@ -328,6 +416,43 @@ Writing Output: C:\Users\User\Desktop\GitHub Repositories\RPG-Backpacks\fd2024.2
   net/rpgbackpacks/world/inventory/IBGUIMenu$8.class
   net/rpgbackpacks/world/inventory/IBGUIMenu$9.class
   net/rpgbackpacks/world/inventory/IBGUIMenu.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$1.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$10.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$11.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$12.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$13.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$14.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$15.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$16.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$17.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$18.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$19.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$2.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$20.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$21.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$22.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$23.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$24.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$25.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$26.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$27.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$28.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$29.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$3.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$30.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$31.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$32.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$33.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$34.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$35.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$36.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$4.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$5.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$6.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$7.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$8.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu$9.class
+  net/rpgbackpacks/world/inventory/IronBackpackGUIMenu.class
   net/rpgbackpacks/world/inventory/LBGUIMenu$1.class
   net/rpgbackpacks/world/inventory/LBGUIMenu$10.class
   net/rpgbackpacks/world/inventory/LBGUIMenu$11.class

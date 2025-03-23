@@ -7,7 +7,7 @@
     "customModelName": "ironbackpackitem:default",
     "name": "Iron Backpack",
     "rarity": "COMMON",
-    "slotType": "BACK",
+    "slotType": "Backpack",
     "baubleModel": "Modelbackpack",
     "baubleModelTexture": "bpiron.png",
     "creativeTab": {
@@ -26,7 +26,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
-    "addSlot": true,
+    "addSlot": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": []

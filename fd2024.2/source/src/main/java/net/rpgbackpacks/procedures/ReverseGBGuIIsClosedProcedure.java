@@ -25,7 +25,7 @@ public class ReverseGBGuIIsClosedProcedure {
 		double i = 0;
 		entity.getPersistentData().putBoolean("didjob", true);
 		if (entity instanceof LivingEntity lv) {
-			CuriosApi.getCuriosHelper().findCurios(lv, RpgBackpacksModItems.IRON_BACKPACK.get()).forEach(item -> {
+			CuriosApi.getCuriosHelper().findCurios(lv, RpgBackpacksModItems.GOLDEN_BACKPACK.get()).forEach(item -> {
 				ItemStack itemstackiterator = item.stack();
 				entity.getPersistentData().putDouble("slti", (itemstackiterator.getOrCreateTag().getCompound("Inventory").getInt("Size")));
 				entity.getPersistentData().putDouble("bpi", 0);

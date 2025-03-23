@@ -4,7 +4,7 @@ package net.rpgbackpacks.item;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import net.rpgbackpacks.world.inventory.LBGUIMenu;
-import net.rpgbackpacks.procedures.LeatherBackpackRightclickedProcedure;
+import net.rpgbackpacks.procedures.IBRightclickedProcedure;
 import net.rpgbackpacks.item.inventory.LeatherBackpackInventoryCapability;
 
 import net.minecraftforge.network.NetworkHooks;
@@ -63,7 +63,7 @@ public class LeatherBackpackItem extends Item implements ICurioItem {
 			});
 		}
 
-		LeatherBackpackRightclickedProcedure.execute(entity, itemstack);
+		IBRightclickedProcedure.execute(entity, itemstack);
 		return ar;
 	}
 

@@ -2,6 +2,7 @@
 package net.rpgbackpacks.world.inventory;
 
 import net.rpgbackpacks.procedures.ReverseLeatherBackpackGUIThisGUIIsClosedProcedure;
+import net.rpgbackpacks.procedures.PlayerJoinsProcedure;
 import net.rpgbackpacks.procedures.LeatherBackpackGUIThisGUIIsOpenedProcedure;
 import net.rpgbackpacks.init.RpgBackpacksModMenus;
 
@@ -169,6 +170,7 @@ public class LeatherBackpackGUIMenu extends AbstractContainerMenu implements Sup
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+		PlayerJoinsProcedure.execute(entity);
 	}
 
 	@Override

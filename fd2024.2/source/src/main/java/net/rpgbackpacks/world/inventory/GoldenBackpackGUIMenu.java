@@ -2,6 +2,7 @@
 package net.rpgbackpacks.world.inventory;
 
 import net.rpgbackpacks.procedures.ReverseGBGuIIsClosedProcedure;
+import net.rpgbackpacks.procedures.PlayerJoinsProcedure;
 import net.rpgbackpacks.procedures.GBGUIIsOpenedProcedure;
 import net.rpgbackpacks.init.RpgBackpacksModMenus;
 
@@ -223,6 +224,7 @@ public class GoldenBackpackGUIMenu extends AbstractContainerMenu implements Supp
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 36 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 36 + 142));
+		PlayerJoinsProcedure.execute(entity);
 	}
 
 	@Override

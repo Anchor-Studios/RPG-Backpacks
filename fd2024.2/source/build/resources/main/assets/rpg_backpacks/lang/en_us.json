@@ -2,12 +2,13 @@
   "key.rpg_backpacks.open_backpack": "Open Backpack",
   "item.rpg_backpacks.golden_backpack": "Golden Backpack",
   "gui.rpg_backpacks.leather_backpack_gui.label_inventory": "Inventory",
+  "curios.identifier.backpack": "Backpack",
   "gui.rpg_backpacks.iron_backpack_gui.label_inventory": "Inventory",
   "item_group.rpg_backpacks.rpg_backpacks": "RPG Backpacks",
-  "gui.rpg_backpacks.lbgui.label_inventory": "Inventory",
   "gui.rpg_backpacks.ibgui.label_inventory": "Inventory",
   "gui.rpg_backpacks.gbgui.label_inventory": "Inventory",
-  "item.rpg_backpacks.iron_backpack": "Iron Backpack",
   "item.rpg_backpacks.leather_backpack": "Leather Backpack",
+  "gui.rpg_backpacks.lbgui.label_inventory": "Inventory",
+  "item.rpg_backpacks.iron_backpack": "Iron Backpack",
   "gui.rpg_backpacks.golden_backpack_gui.label_inventory": "Inventory"
 }

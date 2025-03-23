@@ -23,7 +23,7 @@
             "falpha": 0.0
           },
           "x": 133,
-          "y": 25
+          "y": 26
         }
       },
       {
@@ -38,7 +38,7 @@
             "falpha": 0.0
           },
           "x": 133,
-          "y": 127
+          "y": 128
         }
       },
       {
@@ -852,6 +852,9 @@
         }
       }
     ],
+    "onOpen": {
+      "name": "PlayerJoins"
+    },
     "onTick": {
       "name": "GBGUIIsOpened"
     },
