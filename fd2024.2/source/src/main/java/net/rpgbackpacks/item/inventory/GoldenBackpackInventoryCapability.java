@@ -2,7 +2,7 @@
 package net.rpgbackpacks.item.inventory;
 
 import net.rpgbackpacks.init.RpgBackpacksModItems;
-import net.rpgbackpacks.client.gui.IBGUIScreen;
+import net.rpgbackpacks.client.gui.GBGUIScreen;
 
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.fml.common.Mod;
@@ -29,7 +29,7 @@ public class GoldenBackpackInventoryCapability implements ICapabilitySerializabl
 	@OnlyIn(Dist.CLIENT)
 	public static void onItemDropped(ItemTossEvent event) {
 		if (event.getEntity().getItem().getItem() == RpgBackpacksModItems.GOLDEN_BACKPACK.get()) {
-			if (Minecraft.getInstance().screen instanceof IBGUIScreen) {
+			if (Minecraft.getInstance().screen instanceof GBGUIScreen) {
 				Minecraft.getInstance().player.closeContainer();
 			}
 		}
@@ -53,7 +53,7 @@ public class GoldenBackpackInventoryCapability implements ICapabilitySerializabl
 	}
 
 	private ItemStackHandler createItemHandler() {
-		return new ItemStackHandler(36) {
+		return new ItemStackHandler(45) {
 			@Override
 			public int getSlotLimit(int slot) {
 				return 64;

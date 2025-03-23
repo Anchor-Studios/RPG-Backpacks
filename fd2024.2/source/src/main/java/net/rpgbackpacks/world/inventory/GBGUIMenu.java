@@ -42,7 +42,7 @@ public class GBGUIMenu extends AbstractContainerMenu implements Supplier<Map<Int
 		super(RpgBackpacksModMenus.GBGUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(36);
+		this.internal = new ItemStackHandler(45);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -185,11 +185,38 @@ public class GBGUIMenu extends AbstractContainerMenu implements Supplier<Map<Int
 		this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 152, 72) {
 			private final int slot = 35;
 		}));
+		this.customSlots.put(36, this.addSlot(new SlotItemHandler(internal, 36, 8, 90) {
+			private final int slot = 36;
+		}));
+		this.customSlots.put(37, this.addSlot(new SlotItemHandler(internal, 37, 26, 90) {
+			private final int slot = 37;
+		}));
+		this.customSlots.put(38, this.addSlot(new SlotItemHandler(internal, 38, 44, 90) {
+			private final int slot = 38;
+		}));
+		this.customSlots.put(39, this.addSlot(new SlotItemHandler(internal, 39, 62, 90) {
+			private final int slot = 39;
+		}));
+		this.customSlots.put(40, this.addSlot(new SlotItemHandler(internal, 40, 80, 90) {
+			private final int slot = 40;
+		}));
+		this.customSlots.put(41, this.addSlot(new SlotItemHandler(internal, 41, 98, 90) {
+			private final int slot = 41;
+		}));
+		this.customSlots.put(42, this.addSlot(new SlotItemHandler(internal, 42, 116, 90) {
+			private final int slot = 42;
+		}));
+		this.customSlots.put(43, this.addSlot(new SlotItemHandler(internal, 43, 134, 90) {
+			private final int slot = 43;
+		}));
+		this.customSlots.put(44, this.addSlot(new SlotItemHandler(internal, 44, 152, 90) {
+			private final int slot = 44;
+		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 18 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 36 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 18 + 142));
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 36 + 142));
 	}
 
 	@Override
@@ -212,16 +239,16 @@ public class GBGUIMenu extends AbstractContainerMenu implements Supplier<Map<Int
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 36) {
-				if (!this.moveItemStackTo(itemstack1, 36, this.slots.size(), true))
+			if (index < 45) {
+				if (!this.moveItemStackTo(itemstack1, 45, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 36, false)) {
-				if (index < 36 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 36 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 45, false)) {
+				if (index < 45 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 45 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 36, 36 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 45, 45 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

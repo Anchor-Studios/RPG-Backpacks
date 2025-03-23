@@ -196,6 +196,7 @@ public class IronBackpackGUIMenu extends AbstractContainerMenu implements Suppli
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 18 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
 			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 18 + 142));
+		IBGUIIsOpenedProcedure.execute(world, entity);
 	}
 
 	@Override

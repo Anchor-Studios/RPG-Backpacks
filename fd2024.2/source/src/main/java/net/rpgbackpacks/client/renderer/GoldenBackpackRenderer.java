@@ -21,7 +21,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class GoldenBackpackRenderer implements ICurioRenderer {
-	private static final ResourceLocation TEXTURE = new ResourceLocation("rpg_backpacks", "textures/entities/bpiron.png");
+	private static final ResourceLocation TEXTURE = new ResourceLocation("rpg_backpacks", "textures/entities/bpgolden.png");
 	private final Modelbackpack model;
 
 	public GoldenBackpackRenderer() {

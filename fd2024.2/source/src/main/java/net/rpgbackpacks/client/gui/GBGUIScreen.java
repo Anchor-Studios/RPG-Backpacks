@@ -29,7 +29,7 @@ public class GBGUIScreen extends AbstractContainerScreen<GBGUIMenu> {
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 176;
-		this.imageHeight = 184;
+		this.imageHeight = 202;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("rpg_backpacks:textures/screens/gbgui.png");
@@ -61,7 +61,7 @@ public class GBGUIScreen extends AbstractContainerScreen<GBGUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.rpg_backpacks.gbgui.label_inventory"), 7, 90, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.rpg_backpacks.gbgui.label_inventory"), 7, 108, -12829636, false);
 		guiGraphics.drawString(this.font,
 
 				DisplayNameReturnProcedure.execute(entity), 7, 6, -12829636, false);

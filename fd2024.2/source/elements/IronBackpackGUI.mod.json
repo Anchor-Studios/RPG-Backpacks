@@ -690,6 +690,9 @@
         }
       }
     ],
+    "onOpen": {
+      "name": "IBGUIIsOpened"
+    },
     "onTick": {
       "name": "IBGUIIsOpened"
     },

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "rpg_backpacks:leather_backpack",
-    "rpg_backpacks:iron_backpack"
+    "rpg_backpacks:iron_backpack",
+    "rpg_backpacks:golden_backpack"
   ]
 }

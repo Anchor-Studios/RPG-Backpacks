@@ -3,7 +3,7 @@ package net.rpgbackpacks.item;
 
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
-import net.rpgbackpacks.world.inventory.IBGUIMenu;
+import net.rpgbackpacks.world.inventory.GBGUIMenu;
 import net.rpgbackpacks.procedures.IBRightclickedProcedure;
 import net.rpgbackpacks.item.inventory.GoldenBackpackInventoryCapability;
 
@@ -47,7 +47,7 @@ public class GoldenBackpackItem extends Item implements ICurioItem {
 			NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Iron Backpack");
+					return Component.literal("Golden Backpack");
 				}
 
 				@Override
@@ -55,7 +55,7 @@ public class GoldenBackpackItem extends Item implements ICurioItem {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(entity.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new IBGUIMenu(id, inventory, packetBuffer);
+					return new GBGUIMenu(id, inventory, packetBuffer);
 				}
 			}, buf -> {
 				buf.writeBlockPos(entity.blockPosition());

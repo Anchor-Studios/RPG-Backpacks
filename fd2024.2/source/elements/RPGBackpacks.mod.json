@@ -4,7 +4,7 @@
   "definition": {
     "name": "RPG Backpacks",
     "icon": {
-      "value": "CUSTOM:LeatherBackpack"
+      "value": "CUSTOM:IronBackpack"
     },
     "showSearch": true
   }
