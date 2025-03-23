@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "backpack",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "TAG:minecraft:chests/wooden"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.STRING"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NetheriteBackpack"
+    },
+    "name": "netherite_backpack_recipe",
+    "namespace": "mod"
+  }
+}

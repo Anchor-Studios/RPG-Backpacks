@@ -1,0 +1,7 @@
+{
+  "parent": "rpg_backpacks:custom/diamondbackpackitem",
+  "textures": {
+    "0": "rpg_backpacks:block/bpdiamond",
+    "particle": "rpg_backpacks:item/bpdiamond"
+  }
+}

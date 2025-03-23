@@ -1,0 +1,719 @@
+{
+  "mod_elements": [
+    {
+      "name": "LeatherBackpack",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leather_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/item/inventory/LeatherBackpackInventoryCapability.java",
+          "src/main/resources/assets/rpg_backpacks/models/item/leather_backpack.json",
+          "src/main/java/net/rpgbackpacks/item/LeatherBackpackItem.java",
+          "src/main/java/net/rpgbackpacks/client/renderer/LeatherBackpackRenderer.java"
+        ]
+      },
+      "path": "~/BackpackItems"
+    },
+    {
+      "name": "LeatherBackpackGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leather_backpack_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/client/gui/LeatherBackpackGUIScreen.java",
+          "src/main/java/net/rpgbackpacks/world/inventory/LeatherBackpackGUIMenu.java"
+        ]
+      },
+      "path": "~/BackpackItems/GUIs"
+    },
+    {
+      "name": "DisplayNameReturn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_name_return",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/DisplayNameReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/BackpackItems/GUIs"
+    },
+    {
+      "name": "RPGBackpacks",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rpg_backpacks",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "OpenBackpack",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/network/OpenBackpackMessage.java"
+        ]
+      },
+      "path": "~/KeyBinds"
+    },
+    {
+      "name": "OpenBackpackOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_backpack_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/OpenBackpackOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/KeyBinds"
+    },
+    {
+      "name": "LeatherBackpackGUIThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leather_backpack_gui_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/LeatherBackpackGUIThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackItems/GUIs"
+    },
+    {
+      "name": "ReverseLeatherBackpackGUIThisGUIIsClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reverse_leather_backpack_gui_this_gui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/ReverseLeatherBackpackGUIThisGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackItems/GUIs"
+    },
+    {
+      "name": "LBGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lbgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/world/inventory/LBGUIMenu.java",
+          "src/main/java/net/rpgbackpacks/client/gui/LBGUIScreen.java"
+        ]
+      },
+      "path": "~/BackpackItems/GUIs"
+    },
+    {
+      "name": "PlayerJoins",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joins",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/PlayerJoinsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IBRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ib_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/IBRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "IronBackpack",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/item/IronBackpackItem.java",
+          "src/main/resources/assets/rpg_backpacks/models/item/iron_backpack.json",
+          "src/main/java/net/rpgbackpacks/item/inventory/IronBackpackInventoryCapability.java",
+          "src/main/java/net/rpgbackpacks/client/renderer/IronBackpackRenderer.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "IBGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ibgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/world/inventory/IBGUIMenu.java",
+          "src/main/java/net/rpgbackpacks/client/gui/IBGUIScreen.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "IBGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ibgui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/IBGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "ReverseIBGUIThiGUIIsClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reverse_ibgui_thi_gui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/ReverseIBGUIThiGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "IronBackpackGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_backpack_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/world/inventory/IronBackpackGUIMenu.java",
+          "src/main/java/net/rpgbackpacks/client/gui/IronBackpackGUIScreen.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "GoldenBackpack",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/item/inventory/GoldenBackpackInventoryCapability.java",
+          "src/main/java/net/rpgbackpacks/client/renderer/GoldenBackpackRenderer.java",
+          "src/main/resources/assets/rpg_backpacks/models/item/golden_backpack.json",
+          "src/main/java/net/rpgbackpacks/item/GoldenBackpackItem.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "GBGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gbgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/client/gui/GBGUIScreen.java",
+          "src/main/java/net/rpgbackpacks/world/inventory/GBGUIMenu.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "GBGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gbgui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/GBGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "ReverseGBGuIIsClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reverse_gb_gu_i_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/ReverseGBGuIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "GoldenBackpackGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_backpack_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/world/inventory/GoldenBackpackGUIMenu.java",
+          "src/main/java/net/rpgbackpacks/client/gui/GoldenBackpackGUIScreen.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "Backpack",
+      "type": "curiosslot",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curios/tags/items/backpack.json"
+        ]
+      }
+    },
+    {
+      "name": "BackpackLoader",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack_loader",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpg_backpacks/models/item/backpack_loader.json",
+          "src/main/java/net/rpgbackpacks/item/BackpackLoaderItem.java"
+        ]
+      },
+      "path": "~/BackpackItems"
+    },
+    {
+      "name": "BackpackLoad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backpack_load",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/BackpackLoadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackItems"
+    },
+    {
+      "name": "DiamondBackpack",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/item/DiamondBackpackItem.java",
+          "src/main/resources/assets/rpg_backpacks/models/item/diamond_backpack.json",
+          "src/main/java/net/rpgbackpacks/client/renderer/DiamondBackpackRenderer.java",
+          "src/main/java/net/rpgbackpacks/item/inventory/DiamondBackpackInventoryCapability.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "DBGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dbgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/world/inventory/DBGUIMenu.java",
+          "src/main/java/net/rpgbackpacks/client/gui/DBGUIScreen.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "DBGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dbgui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/DBGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "ReverseDBGUIIsClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reverse_dbgui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/ReverseDBGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "DiamondBackpackGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_backpack_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/client/gui/DiamondBackpackGUIScreen.java",
+          "src/main/java/net/rpgbackpacks/world/inventory/DiamondBackpackGUIMenu.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "NetheriteBackpack",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_backpack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/item/NetheriteBackpackItem.java",
+          "src/main/resources/assets/rpg_backpacks/models/item/netherite_backpack.json",
+          "src/main/java/net/rpgbackpacks/client/renderer/NetheriteBackpackRenderer.java",
+          "src/main/java/net/rpgbackpacks/item/inventory/NetheriteBackpackInventoryCapability.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "NBGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nbgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/world/inventory/NBGUIMenu.java",
+          "src/main/java/net/rpgbackpacks/client/gui/NBGUIScreen.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "NBGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nbgui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/NBGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "ReverseNBGUIIsClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reverse_nbgui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/procedures/ReverseNBGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "NetheriteBackpackGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_backpack_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rpgbackpacks/world/inventory/NetheriteBackpackGUIMenu.java",
+          "src/main/java/net/rpgbackpacks/client/gui/NetheriteBackpackGUIScreen.java"
+        ]
+      },
+      "path": "~/BackpackDupe"
+    },
+    {
+      "name": "LeatherBackpackRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leather_backpack_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpg_backpacks/recipes/leather_backpack_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "bptitle",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:chests/wooden": []
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "key.rpg_backpacks.open_backpack": "Open Backpack",
+      "item.rpg_backpacks.golden_backpack": "Golden Backpack",
+      "gui.rpg_backpacks.leather_backpack_gui.label_inventory": "Inventory",
+      "curios.identifier.backpack": "Backpack",
+      "gui.rpg_backpacks.diamond_backpack_gui.label_inventory": "Inventory",
+      "gui.rpg_backpacks.nbgui.label_inventory": "Inventory",
+      "gui.rpg_backpacks.iron_backpack_gui.label_inventory": "Inventory",
+      "item_group.rpg_backpacks.rpg_backpacks": "RPG Backpacks",
+      "gui.rpg_backpacks.netherite_backpack_gui.label_inventory": "Inventory",
+      "gui.rpg_backpacks.ibgui.label_inventory": "Inventory",
+      "gui.rpg_backpacks.gbgui.label_inventory": "Inventory",
+      "item.rpg_backpacks.netherite_backpack": "Netherite Backpack",
+      "item.rpg_backpacks.leather_backpack": "Leather Backpack",
+      "item.rpg_backpacks.diamond_backpack": "Diamond Backpack",
+      "gui.rpg_backpacks.dbgui.label_inventory": "Inventory",
+      "item.rpg_backpacks.backpack_loader": "null",
+      "gui.rpg_backpacks.lbgui.label_inventory": "Inventory",
+      "item.rpg_backpacks.iron_backpack": "Iron Backpack",
+      "gui.rpg_backpacks.golden_backpack_gui.label_inventory": "Inventory"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "BackpackItems",
+        "children": [
+          {
+            "name": "GUIs",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "KeyBinds",
+        "children": []
+      },
+      {
+        "name": "BackpackDupe",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "rpg_backpacks",
+    "modName": "RPG Backpacks",
+    "version": "5.0.0",
+    "author": "Anchor Studios",
+    "websiteURL": "https://www.anchorstudios.site/wiki/rpg-backpacks",
+    "license": "All Rights Reserved",
+    "serverSideOnly": true,
+    "modPicture": "rpg-backpacks",
+    "requiredMods": [
+      "ancore"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "ReportIfYouAreSeeingThis",
+    "modElementsPackage": "net.rpgbackpacks"
+  },
+  "mcreatorVersion": 202400232117
+}

@@ -21,5 +21,7 @@ public class RpgBackpacksModTabs {
 				tabData.accept(RpgBackpacksModItems.LEATHER_BACKPACK.get());
 				tabData.accept(RpgBackpacksModItems.IRON_BACKPACK.get());
 				tabData.accept(RpgBackpacksModItems.GOLDEN_BACKPACK.get());
+				tabData.accept(RpgBackpacksModItems.DIAMOND_BACKPACK.get());
+				tabData.accept(RpgBackpacksModItems.NETHERITE_BACKPACK.get());
 			}).withSearchBar().build());
 }

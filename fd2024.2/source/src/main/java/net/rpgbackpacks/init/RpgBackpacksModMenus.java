@@ -4,12 +4,16 @@
  */
 package net.rpgbackpacks.init;
 
+import net.rpgbackpacks.world.inventory.NetheriteBackpackGUIMenu;
+import net.rpgbackpacks.world.inventory.NBGUIMenu;
 import net.rpgbackpacks.world.inventory.LeatherBackpackGUIMenu;
 import net.rpgbackpacks.world.inventory.LBGUIMenu;
 import net.rpgbackpacks.world.inventory.IronBackpackGUIMenu;
 import net.rpgbackpacks.world.inventory.IBGUIMenu;
 import net.rpgbackpacks.world.inventory.GoldenBackpackGUIMenu;
 import net.rpgbackpacks.world.inventory.GBGUIMenu;
+import net.rpgbackpacks.world.inventory.DiamondBackpackGUIMenu;
+import net.rpgbackpacks.world.inventory.DBGUIMenu;
 import net.rpgbackpacks.RpgBackpacksMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -27,4 +31,8 @@ public class RpgBackpacksModMenus {
 	public static final RegistryObject<MenuType<IronBackpackGUIMenu>> IRON_BACKPACK_GUI = REGISTRY.register("iron_backpack_gui", () -> IForgeMenuType.create(IronBackpackGUIMenu::new));
 	public static final RegistryObject<MenuType<GBGUIMenu>> GBGUI = REGISTRY.register("gbgui", () -> IForgeMenuType.create(GBGUIMenu::new));
 	public static final RegistryObject<MenuType<GoldenBackpackGUIMenu>> GOLDEN_BACKPACK_GUI = REGISTRY.register("golden_backpack_gui", () -> IForgeMenuType.create(GoldenBackpackGUIMenu::new));
+	public static final RegistryObject<MenuType<DBGUIMenu>> DBGUI = REGISTRY.register("dbgui", () -> IForgeMenuType.create(DBGUIMenu::new));
+	public static final RegistryObject<MenuType<DiamondBackpackGUIMenu>> DIAMOND_BACKPACK_GUI = REGISTRY.register("diamond_backpack_gui", () -> IForgeMenuType.create(DiamondBackpackGUIMenu::new));
+	public static final RegistryObject<MenuType<NBGUIMenu>> NBGUI = REGISTRY.register("nbgui", () -> IForgeMenuType.create(NBGUIMenu::new));
+	public static final RegistryObject<MenuType<NetheriteBackpackGUIMenu>> NETHERITE_BACKPACK_GUI = REGISTRY.register("netherite_backpack_gui", () -> IForgeMenuType.create(NetheriteBackpackGUIMenu::new));
 }

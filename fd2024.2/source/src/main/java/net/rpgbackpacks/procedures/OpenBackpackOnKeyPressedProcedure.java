@@ -2,9 +2,11 @@ package net.rpgbackpacks.procedures;
 
 import top.theillusivec4.curios.api.CuriosApi;
 
+import net.rpgbackpacks.world.inventory.NetheriteBackpackGUIMenu;
 import net.rpgbackpacks.world.inventory.LeatherBackpackGUIMenu;
 import net.rpgbackpacks.world.inventory.IronBackpackGUIMenu;
 import net.rpgbackpacks.world.inventory.GoldenBackpackGUIMenu;
+import net.rpgbackpacks.world.inventory.DiamondBackpackGUIMenu;
 import net.rpgbackpacks.network.RpgBackpacksModVariables;
 import net.rpgbackpacks.init.RpgBackpacksModItems;
 
@@ -107,6 +109,60 @@ public class OpenBackpackOnKeyPressedProcedure {
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
 						return new GoldenBackpackGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					}
+				}, _bpos);
+			}
+		} else if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(RpgBackpacksModItems.DIAMOND_BACKPACK.get(), lv).isPresent() : false) {
+			if (entity instanceof LivingEntity lv) {
+				CuriosApi.getCuriosHelper().findCurios(lv, RpgBackpacksModItems.DIAMOND_BACKPACK.get()).forEach(item -> {
+					ItemStack itemstackiterator = item.stack();
+					{
+						String _setval = itemstackiterator.getDisplayName().getString();
+						entity.getCapability(RpgBackpacksModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.bptitle = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+				});
+			}
+			if (entity instanceof ServerPlayer _ent) {
+				BlockPos _bpos = BlockPos.containing(x, y, z);
+				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+					@Override
+					public Component getDisplayName() {
+						return Component.literal("DiamondBackpackGUI");
+					}
+
+					@Override
+					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+						return new DiamondBackpackGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					}
+				}, _bpos);
+			}
+		} else if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(RpgBackpacksModItems.NETHERITE_BACKPACK.get(), lv).isPresent() : false) {
+			if (entity instanceof LivingEntity lv) {
+				CuriosApi.getCuriosHelper().findCurios(lv, RpgBackpacksModItems.NETHERITE_BACKPACK.get()).forEach(item -> {
+					ItemStack itemstackiterator = item.stack();
+					{
+						String _setval = itemstackiterator.getDisplayName().getString();
+						entity.getCapability(RpgBackpacksModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.bptitle = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+				});
+			}
+			if (entity instanceof ServerPlayer _ent) {
+				BlockPos _bpos = BlockPos.containing(x, y, z);
+				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+					@Override
+					public Component getDisplayName() {
+						return Component.literal("NetheriteBackpackGUI");
+					}
+
+					@Override
+					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+						return new NetheriteBackpackGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}

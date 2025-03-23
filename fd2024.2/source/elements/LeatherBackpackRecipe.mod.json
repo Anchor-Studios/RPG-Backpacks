@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "backpack",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "TAG:minecraft:chests/wooden"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "Items.STRING"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LeatherBackpack"
+    },
+    "name": "leather_backpack_recipe",
+    "namespace": "mod"
+  }
+}

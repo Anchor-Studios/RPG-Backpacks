@@ -4,9 +4,11 @@
  */
 package net.rpgbackpacks.init;
 
+import net.rpgbackpacks.item.NetheriteBackpackItem;
 import net.rpgbackpacks.item.LeatherBackpackItem;
 import net.rpgbackpacks.item.IronBackpackItem;
 import net.rpgbackpacks.item.GoldenBackpackItem;
+import net.rpgbackpacks.item.DiamondBackpackItem;
 import net.rpgbackpacks.item.BackpackLoaderItem;
 import net.rpgbackpacks.RpgBackpacksMod;
 
@@ -22,6 +24,8 @@ public class RpgBackpacksModItems {
 	public static final RegistryObject<Item> IRON_BACKPACK = REGISTRY.register("iron_backpack", () -> new IronBackpackItem());
 	public static final RegistryObject<Item> GOLDEN_BACKPACK = REGISTRY.register("golden_backpack", () -> new GoldenBackpackItem());
 	public static final RegistryObject<Item> BACKPACK_LOADER = REGISTRY.register("backpack_loader", () -> new BackpackLoaderItem());
+	public static final RegistryObject<Item> DIAMOND_BACKPACK = REGISTRY.register("diamond_backpack", () -> new DiamondBackpackItem());
+	public static final RegistryObject<Item> NETHERITE_BACKPACK = REGISTRY.register("netherite_backpack", () -> new NetheriteBackpackItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

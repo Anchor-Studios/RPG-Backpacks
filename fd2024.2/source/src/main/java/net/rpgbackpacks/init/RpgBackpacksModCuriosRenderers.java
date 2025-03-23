@@ -2,9 +2,11 @@ package net.rpgbackpacks.init;
 
 import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
+import net.rpgbackpacks.client.renderer.NetheriteBackpackRenderer;
 import net.rpgbackpacks.client.renderer.LeatherBackpackRenderer;
 import net.rpgbackpacks.client.renderer.IronBackpackRenderer;
 import net.rpgbackpacks.client.renderer.GoldenBackpackRenderer;
+import net.rpgbackpacks.client.renderer.DiamondBackpackRenderer;
 import net.rpgbackpacks.client.model.Modelbackpack;
 
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -19,6 +21,8 @@ public class RpgBackpacksModCuriosRenderers {
 		evt.registerLayerDefinition(RpgBackpacksModLayerDefinitions.LEATHER_BACKPACK, Modelbackpack::createBodyLayer);
 		evt.registerLayerDefinition(RpgBackpacksModLayerDefinitions.IRON_BACKPACK, Modelbackpack::createBodyLayer);
 		evt.registerLayerDefinition(RpgBackpacksModLayerDefinitions.GOLDEN_BACKPACK, Modelbackpack::createBodyLayer);
+		evt.registerLayerDefinition(RpgBackpacksModLayerDefinitions.DIAMOND_BACKPACK, Modelbackpack::createBodyLayer);
+		evt.registerLayerDefinition(RpgBackpacksModLayerDefinitions.NETHERITE_BACKPACK, Modelbackpack::createBodyLayer);
 	}
 
 	@SubscribeEvent
@@ -26,5 +30,7 @@ public class RpgBackpacksModCuriosRenderers {
 		CuriosRendererRegistry.register(RpgBackpacksModItems.LEATHER_BACKPACK.get(), LeatherBackpackRenderer::new);
 		CuriosRendererRegistry.register(RpgBackpacksModItems.IRON_BACKPACK.get(), IronBackpackRenderer::new);
 		CuriosRendererRegistry.register(RpgBackpacksModItems.GOLDEN_BACKPACK.get(), GoldenBackpackRenderer::new);
+		CuriosRendererRegistry.register(RpgBackpacksModItems.DIAMOND_BACKPACK.get(), DiamondBackpackRenderer::new);
+		CuriosRendererRegistry.register(RpgBackpacksModItems.NETHERITE_BACKPACK.get(), NetheriteBackpackRenderer::new);
 	}
 }
