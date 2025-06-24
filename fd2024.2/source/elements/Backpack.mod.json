@@ -1,9 +1,0 @@
-{
-  "_fv": 66,
-  "_type": "curiosslot",
-  "definition": {
-    "texture": "backpackslot.png",
-    "name": "Backpack",
-    "amount": 1
-  }
-}

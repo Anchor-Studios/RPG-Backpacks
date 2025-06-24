@@ -1,7 +1,0 @@
-{
-  "parent": "rpg_backpacks:custom/ironbackpackitem",
-  "textures": {
-    "0": "rpg_backpacks:block/bpiron",
-    "particle": "rpg_backpacks:item/bpiron"
-  }
-}
