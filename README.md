@@ -16,7 +16,7 @@ The **RPG Backpacks** mod by Anchor Studios adds immersive, RPG-style backpacks 
 
 ## License
 
-[Custom License](https://raw.githubusercontent.com/Anchor-Studios/RPG-Backpacks/refs/heads/main/LICENSE.txt), Anchor Studios.
+[Custom License](https://github.com/Anchor-Studios/RPG-Backpacks/blob/main/LICENSE.txt), Anchor Studios.
 
 ---
 
