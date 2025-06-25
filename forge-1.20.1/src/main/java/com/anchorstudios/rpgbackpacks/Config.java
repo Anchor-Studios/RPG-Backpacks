@@ -20,7 +20,7 @@ public class Config {
         public final ForgeConfigSpec.BooleanValue smoothTimeTransition;
 
         Common(ForgeConfigSpec.Builder builder) {
-            builder.push("Day Length Settings");
+            builder.push("RPG Backpacks Settings");
 
             useServerTime = builder
                     .comment("Use server time instead of system clock.")
