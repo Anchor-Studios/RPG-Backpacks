@@ -23,12 +23,13 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.UUID;
+import java.util.function.Supplier;
 
 public class BackpackItem extends ArmorItem {
 
-    private final double storageSlots;
+    private final Supplier<Integer> storageSlots;
 
-    public BackpackItem(ArmorMaterial material, Type slot, Properties properties, double storageSlots) {
+    public BackpackItem(ArmorMaterial material, Type slot, Properties properties, Supplier<Integer> storageSlots) {
         super(material, slot, properties);
         this.storageSlots = storageSlots;
     }
@@ -66,7 +67,7 @@ public class BackpackItem extends ArmorItem {
             AttributeModifier modifier = new AttributeModifier(
                     UUID.fromString("1d5f9d32-7a77-4b39-9f07-f055f3cbf1c7"),
                     "Storage Capacity",
-                    storageSlots,
+                    storageSlots.get(),
                     AttributeModifier.Operation.ADDITION
             );
 
@@ -76,4 +77,5 @@ public class BackpackItem extends ArmorItem {
 
         return ImmutableMultimap.of();
     }
+
 }

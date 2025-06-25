@@ -43,6 +43,7 @@ public class RPGBackpacks
 
     public RPGBackpacks(FMLJavaModLoadingContext context)
     {
+        context.registerConfig(ModConfig.Type.COMMON, Config.COMMON_SPEC);
         IEventBus modEventBus = context.getModEventBus();
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -50,7 +51,5 @@ public class RPGBackpacks
         BackpackItems.register(modEventBus);
         RPGBackpacksCreativeTab.register(modEventBus);
         ModAttributes.ATTRIBUTES.register(modEventBus);
-
-        context.registerConfig(ModConfig.Type.COMMON, Config.COMMON_SPEC);
     }
 }

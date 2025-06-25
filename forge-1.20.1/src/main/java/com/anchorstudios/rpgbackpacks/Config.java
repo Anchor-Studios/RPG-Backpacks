@@ -14,29 +14,34 @@ public class Config {
     }
 
     public static class Common {
-        public final ForgeConfigSpec.IntValue manualUtcOffset;
-        public final ForgeConfigSpec.IntValue smoothTransitionDuration;
-        public final ForgeConfigSpec.BooleanValue useServerTime;
-        public final ForgeConfigSpec.BooleanValue smoothTimeTransition;
+        public final ForgeConfigSpec.IntValue leatherBackpackSlots;
+        public final ForgeConfigSpec.IntValue ironBackpackSlots;
+        public final ForgeConfigSpec.IntValue goldenBackpackSlots;
+        public final ForgeConfigSpec.IntValue diamondBackpackSlots;
+        public final ForgeConfigSpec.IntValue netheriteBackpackSlots;
 
         Common(ForgeConfigSpec.Builder builder) {
-            builder.push("RPG Backpacks Settings");
+            builder.push("Backpack Inventory Sizes");
 
-            useServerTime = builder
-                    .comment("Use server time instead of system clock.")
-                    .define("useServerTime", true);
+            leatherBackpackSlots = builder
+                    .comment("Number of inventory slots in the Leather Backpack")
+                    .defineInRange("leatherBackpackSlots", 27, 1, 999);
 
-            manualUtcOffset = builder
-                    .comment("Sets your custom time zone offset (in hours) relative to UTC (Coordinated Universal Time). This is only used if useServerTime is set to false. It lets you simulate real-time sync based on any time zone, regardless of your server or system clock.")
-                    .defineInRange("manualUtcOffset", 0, -12, 14);
+            ironBackpackSlots = builder
+                    .comment("Number of inventory slots in the Iron Backpack")
+                    .defineInRange("ironBackpackSlots", 36, 1, 999);
 
-            smoothTimeTransition = builder
-                    .comment("Controls whether time changes — such as switching time zones, enabling real-time sync or updating custom day length — happen instantly or gradually.")
-                    .define("smoothTimeTransition", true);
+            goldenBackpackSlots = builder
+                    .comment("Number of inventory slots in the Golden Backpack")
+                    .defineInRange("goldenBackpackSlots", 45, 1, 999);
 
-            smoothTransitionDuration = builder
-                    .comment("How many real-world seconds the transition to a new time should take when smoothTimeTransition is true.")
-                    .defineInRange("smoothTransitionDuration", 10, 1, Integer.MAX_VALUE);
+            diamondBackpackSlots = builder
+                    .comment("Number of inventory slots in the Diamond Backpack")
+                    .defineInRange("diamondBackpackSlots", 60, 1, 999);
+
+            netheriteBackpackSlots = builder
+                    .comment("Number of inventory slots in the Netherite Backpack")
+                    .defineInRange("netheriteBackpackSlots", 77, 1, 999);
 
             builder.pop();
         }
