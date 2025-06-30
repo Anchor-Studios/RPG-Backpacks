@@ -4,52 +4,53 @@ import com.anchorstudios.rpgbackpacks.attributes.ModAttributes;
 import com.anchorstudios.rpgbackpacks.creativetabs.RPGBackpacksCreativeTab;
 import com.anchorstudios.rpgbackpacks.items.BackpackItems;
 import com.anchorstudios.rpgbackpacks.keybinds.OpenBackpack;
+import com.anchorstudios.rpgbackpacks.screen.BackpackMenu;
+import com.anchorstudios.rpgbackpacks.screen.BackpackScreen;
+import com.anchorstudios.rpgbackpacks.screen.ModMenuTypes;
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraftforge.api.distmarker.Dist;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.event.entity.player.PlayerContainerEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(RPGBackpacks.MODID)
-public class RPGBackpacks
-{
-    // Define mod id in a common place for everything to reference
+public class RPGBackpacks {
     public static final String MODID = "rpgbackpacks";
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public RPGBackpacks(FMLJavaModLoadingContext context)
-    {
-        context.registerConfig(ModConfig.Type.COMMON, Config.COMMON_SPEC);
+    public RPGBackpacks(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
-        MinecraftForge.EVENT_BUS.register(this);
+        // Register config first
+        context.registerConfig(ModConfig.Type.COMMON, Config.COMMON_SPEC);
 
+        // Register everything else
+        ModAttributes.ATTRIBUTES.register(modEventBus);
+        ModMenuTypes.MENUS.register(modEventBus);
         BackpackItems.register(modEventBus);
         RPGBackpacksCreativeTab.register(modEventBus);
-        ModAttributes.ATTRIBUTES.register(modEventBus);
+
+        modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::clientSetup);
+
+        // Don't need to register the event bus here since we're using @EventBusSubscriber
+    }
+
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        LOGGER.info("RPG Backpacks common setup complete");
+    }
+
+    private void clientSetup(final FMLClientSetupEvent event) {
+        MenuScreens.register(ModMenuTypes.BACKPACK.get(), BackpackScreen::new);
+
+        // No need to register keybind events here - handled by @EventBusSubscriber
     }
 }

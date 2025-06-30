@@ -7,5 +7,6 @@
   "itemGroup.rpgbackpacks.backpacks_tab": "RPG Backpacks",
   "tooltip.rpgbackpacks.backpack_open_info": "Can open backpack by pressing [%s]",
   "key.rpgbackpacks.open_backpack": "Open Backpack",
+  "key.categories.inventory": "Inventory",
   "attribute.name.rpgbackpacks.storage": "Storage Slots"
 }
