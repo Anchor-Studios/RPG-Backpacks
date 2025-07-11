@@ -24,6 +24,6 @@ public class ModMenuTypes {
                 // Get the capability from the item stack
                 IItemHandler handler = stack.getCapability(ForgeCapabilities.ITEM_HANDLER)
                         .orElse(new ItemStackHandler(27)); // Default size if capability is missing
-                return new BackpackMenu(windowId, inv, handler);
+                return new BackpackMenu(windowId, inv, handler, stack); // Pass the stack as the 4th parameter
             }));
 }

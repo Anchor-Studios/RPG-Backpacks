@@ -65,7 +65,9 @@ public class BackpackItem extends ArmorItem {
 
         NetworkHooks.openScreen(serverPlayer, new SimpleMenuProvider(
                 (windowId, playerInventory, playerEntity) ->
-                        new BackpackMenu(windowId, playerInventory, BackpackInventoryProvider.getInventory(backpack)),
+                        new BackpackMenu(windowId, playerInventory,
+                                BackpackInventoryProvider.getInventory(backpack),
+                                backpack),
                 backpack.getHoverName()
         ), buf -> buf.writeItem(backpack));
     }
@@ -82,6 +84,10 @@ public class BackpackItem extends ArmorItem {
                         .withStyle(ChatFormatting.GRAY));
             }
         }
+    }
+
+    public static boolean isBackpack(ItemStack stack) {
+        return stack.getItem() instanceof BackpackItem;
     }
 
     @Override
