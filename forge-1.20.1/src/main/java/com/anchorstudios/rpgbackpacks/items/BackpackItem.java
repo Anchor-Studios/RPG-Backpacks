@@ -32,6 +32,7 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
@@ -98,6 +99,11 @@ public class BackpackItem extends ArmorItem {
     }
 
     @Override
+    public ICapabilityProvider initCapabilities(ItemStack stack, @Nullable CompoundTag nbt) {
+        return new BackpackInventoryProvider(storageSlots.get());
+    }
+
+    @Override
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlot slot, ItemStack stack) {
         if (slot == EquipmentSlot.CHEST) {
             ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
@@ -113,8 +119,30 @@ public class BackpackItem extends ArmorItem {
     }
 
     @Override
-    public ICapabilityProvider initCapabilities(ItemStack stack, @Nullable CompoundTag nbt) {
-        return new BackpackInventoryProvider(storageSlots.get());
+    public CompoundTag getShareTag(ItemStack stack) {
+        CompoundTag tag = stack.getOrCreateTag(); // Changed from super.getShareTag()
+        stack.getCapability(ForgeCapabilities.ITEM_HANDLER)
+                .ifPresent(handler -> {
+                    if (handler instanceof ItemStackHandler) {
+                        tag.put("Inventory", ((ItemStackHandler) handler).serializeNBT());
+                    }
+                });
+        return tag;
+    }
+
+    @Override
+    public void readShareTag(ItemStack stack, @Nullable CompoundTag tag) {
+        if (tag != null) {
+            stack.setTag(tag);
+            if (tag.contains("Inventory")) {
+                stack.getCapability(ForgeCapabilities.ITEM_HANDLER)
+                        .ifPresent(handler -> {
+                            if (handler instanceof ItemStackHandler) {
+                                ((ItemStackHandler) handler).deserializeNBT(tag.getCompound("Inventory"));
+                            }
+                        });
+            }
+        }
     }
 
     @Override
