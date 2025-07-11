@@ -76,7 +76,7 @@ public class BackpackItem extends ArmorItem {
 
         if (Minecraft.getInstance() != null) {
             Player player = Minecraft.getInstance().player;
-            if (player != null && (player.getItemBySlot(EquipmentSlot.CHEST).equals(stack) || player.getMainHandItem().equals(stack) || player.getOffhandItem().equals(stack))) {
+            if (player != null && (player.getItemBySlot(EquipmentSlot.CHEST).equals(stack))) {
                 String keyName = OpenBackpack.OPEN_BACKPACK.getTranslatedKeyMessage().getString();
                 tooltip.add(Component.translatable("tooltip.rpgbackpacks.backpack_open_info", keyName)
                         .withStyle(ChatFormatting.GRAY));

@@ -24,16 +24,16 @@ public class BackpackMenu extends AbstractContainerMenu {
             }
         }
 
-        // Add player inventory
+        // Add player inventory (moved up by 18 pixels/1 slot)
         for (int i = 0; i < 3; ++i) {
             for (int j = 0; j < 9; ++j) {
-                this.addSlot(new Slot(playerInventory, j + i * 9 + 9, 8 + j * 18, 103 + i * 18 + (rows > 3 ? (rows - 3) * 18 : 0)));
+                this.addSlot(new Slot(playerInventory, j + i * 9 + 9, 8 + j * 18, 85 + i * 18 + (rows > 3 ? (rows - 3) * 18 : 0)));
             }
         }
 
-        // Add player hotbar
+        // Add player hotbar (moved up by 18 pixels/1 slot)
         for (int i = 0; i < 9; ++i) {
-            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 161 + (rows > 3 ? (rows - 3) * 18 : 0)));
+            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 143 + (rows > 3 ? (rows - 3) * 18 : 0)));
         }
     }
 
