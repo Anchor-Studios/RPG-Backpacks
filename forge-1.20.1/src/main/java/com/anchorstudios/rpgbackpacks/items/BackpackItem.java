@@ -90,6 +90,13 @@ public class BackpackItem extends ArmorItem {
         return stack.getItem() instanceof BackpackItem;
     }
 
+    public static void openFromChestSlot(ServerPlayer player) {
+        ItemStack chestItem = player.getItemBySlot(EquipmentSlot.CHEST);
+        if (chestItem.getItem() instanceof BackpackItem) {
+            openScreen(player, chestItem);
+        }
+    }
+
     @Override
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlot slot, ItemStack stack) {
         if (slot == EquipmentSlot.CHEST) {
