@@ -119,6 +119,16 @@ public class BackpackItem extends ArmorItem {
     }
 
     @Override
+    public boolean hasCraftingRemainingItem(ItemStack stack) {
+        return false;
+    }
+
+    @Override
+    public boolean isRepairable(ItemStack stack) {
+        return false;
+    }
+
+    @Override
     public CompoundTag getShareTag(ItemStack stack) {
         CompoundTag tag = stack.getOrCreateTag(); // Changed from super.getShareTag()
         stack.getCapability(ForgeCapabilities.ITEM_HANDLER)

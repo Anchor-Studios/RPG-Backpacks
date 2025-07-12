@@ -5,12 +5,15 @@ import com.anchorstudios.rpgbackpacks.creativetabs.RPGBackpacksCreativeTab;
 import com.anchorstudios.rpgbackpacks.items.BackpackItems;
 import com.anchorstudios.rpgbackpacks.keybinds.OpenBackpack;
 import com.anchorstudios.rpgbackpacks.packet.NetworkHandler;
+import com.anchorstudios.rpgbackpacks.recipes.BackpackSmithingRecipeSerializer;
+import com.anchorstudios.rpgbackpacks.recipes.BackpackUpgradeRecipe;
 import com.anchorstudios.rpgbackpacks.screen.BackpackMenu;
 import com.anchorstudios.rpgbackpacks.screen.BackpackScreen;
 import com.anchorstudios.rpgbackpacks.screen.ModMenuTypes;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -21,6 +24,9 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 import org.lwjgl.glfw.GLFW;
 import org.slf4j.Logger;
 
@@ -28,6 +34,16 @@ import org.slf4j.Logger;
 public class RPGBackpacks {
     public static final String MODID = "rpgbackpacks";
     private static final Logger LOGGER = LogUtils.getLogger();
+
+    // DeferredRegister for recipe serializers
+    public static final DeferredRegister<RecipeSerializer<?>> RECIPE_SERIALIZERS =
+            DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, MODID);
+
+    public static final RegistryObject<RecipeSerializer<?>> BACKPACK_SMITHING =
+            RECIPE_SERIALIZERS.register("backpack_smithing", () -> BackpackSmithingRecipeSerializer.INSTANCE);
+
+    public static final RegistryObject<RecipeSerializer<?>> BACKPACK_UPGRADE =
+            RECIPE_SERIALIZERS.register("backpack_upgrade", () -> BackpackUpgradeRecipe.Serializer.INSTANCE);
 
     public RPGBackpacks(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
@@ -41,6 +57,9 @@ public class RPGBackpacks {
         BackpackItems.register(modEventBus);
         RPGBackpacksCreativeTab.register(modEventBus);
         NetworkHandler.register();
+
+        // Register the recipe serializers
+        RECIPE_SERIALIZERS.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::clientSetup);
