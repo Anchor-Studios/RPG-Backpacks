@@ -1,13 +1,13 @@
 {
   "day-length": {
-    "homepage": "https://www.anchorstudios.site/wiki/day-length",
+    "homepage": "https://www.anchorstudios.site/wiki/rpg-backpacks",
     "promos": {
-      "1.20.1-forge-latest": "5.1.0",
-      "1.20.1-forge-recommended": "5.1.0",
+      "1.20.1-forge-latest": "5.0.2",
+      "1.20.1-forge-recommended": "5.0.2",
     },
-    "5.1.0": {
-      "changes": "https://github.com/Anchor-Studios/RPG-Backpacks/releases/tag/5.1.0",
-      "downloadUrl": "https://www.anchorstudios.site/wiki/day-length/download"
+    "5.0.2": {
+      "changes": "https://github.com/Anchor-Studios/RPG-Backpacks/releases/tag/5.0.2",
+      "downloadUrl": "https://www.anchorstudios.site/wiki/rpg-backpacks/download"
     }
   }
 }
